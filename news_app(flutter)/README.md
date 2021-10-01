@@ -12,6 +12,6 @@ A new Flutter based news application using NEWSAPI with darkmode and lightmode
 <img src=images/dark1.png width="300" height="570"> <img src=images/dark2.png width="300" height="570">
 
 
-## APK Link
 
-[Download APK](releases/app-release.apk)
+
+
