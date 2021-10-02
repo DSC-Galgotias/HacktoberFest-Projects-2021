@@ -17,9 +17,7 @@ BASIC HTML CALCULATOR TO PERFORM CALCULATION
 ## DEMO
 ![alt-text](1.gif)
 
-## Authors
 
-- [@UMANGGOEL](https://github.com/umanggoel2001)
 
   
 
