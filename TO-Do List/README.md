@@ -12,3 +12,7 @@ This is a pure javasctipt application .
 - Replace the text input value with the task item's text when clicked 
 on save button and hide the save and cancel buttons and show edit and 
 remove buttons
+# What can be added
+- Different timezones
+-Improve css
+-Improve navbar
