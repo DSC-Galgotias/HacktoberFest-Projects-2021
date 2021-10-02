@@ -2,7 +2,7 @@
 This is a pure javasctipt application .
 
 
-# RoadMap
+# Description
 - Add item when click on the Add button
 - Line though the task item when clicked on the task name
 - Remove the line through from the task item when clicked on completed task
