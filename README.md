@@ -1,4 +1,4 @@
-<a>[<img src="HACKTOBER.PNG" width="1000px">](https://agniutkarsh.com)</a>
+<a>[<img src="HACKTOBER.PNG" width="1000px">]</a>
 
 # Simple-Web-Project
 
