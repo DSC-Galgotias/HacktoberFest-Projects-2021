@@ -1,4 +1,4 @@
-<a>[<img src="https://github.com/agniutkarsh/GitHubGraduation-2021/blob/main/Screenshot%202021-09-15%20at%2011.44.40%20AM.png" width="1000px">](https://agniutkarsh.com)</a>
+<a>[<img src="HACKTOBER.PNG" width="1000px">](https://agniutkarsh.com)</a>
 
 # Simple-Web-Project
 
