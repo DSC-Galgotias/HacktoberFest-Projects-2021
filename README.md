@@ -1,6 +1,5 @@
 <a><img src="HACKTOBER.png" width="1000px"></a>
 
-# Simple-Web-Project
 
 This project aims to simplify and guide the way beginners make their first contribution to open source . 
 If you are looking to make your first contribution. This repository is the right place to start.
@@ -82,9 +81,6 @@ If you are looking to make your first contribution. This repository is the right
 
 4. If a maintainer reports behavior that’s not in line with the project’s code of conduct, you will be ineligible to participate.
 
-5. To get a shirt, you must make four approved pull requests (PRs) on opted-in projects between October 1-31 in any time zone.
-
-6. This year, the first 50,000 participants can earn a T-shirt.
 
 ### Examples of Low Quailty Contributions
 
