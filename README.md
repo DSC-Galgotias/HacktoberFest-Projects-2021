@@ -1,4 +1,4 @@
-<a>[<img src="HACKTOBER.png" width="1000px">]</a>
+<a><img src="HACKTOBER.png" width="1000px"></a>
 
 # Simple-Web-Project
 
