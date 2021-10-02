@@ -14,5 +14,5 @@ on save button and hide the save and cancel buttons and show edit and
 remove buttons
 # What can be added
 - Different timezones
--Improve css
--Improve navbar
+- Improve css
+- Improve navbar
