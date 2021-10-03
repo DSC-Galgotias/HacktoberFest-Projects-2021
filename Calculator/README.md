@@ -10,5 +10,5 @@ When the '=' button is clicked, the ouput for the chosen operation on selected n
 
 # Demo Image 
 
-![Calculator Screenshot](/images/Screenshot_calculator.png)
+![Calculator Screenshot](/images/Screenshot_calculator.jpg)
 
