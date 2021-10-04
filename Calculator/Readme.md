@@ -12,3 +12,8 @@ This is a pure javasctipt application .
 # What can be added
 - Scientific Calculator
 - Improve css
+
+# Screenshot 
+
+
+![Calculator_pic](https://user-images.githubusercontent.com/55016527/135841211-94010f9e-eff6-4f79-8049-b6ba4b66fd93.png)
