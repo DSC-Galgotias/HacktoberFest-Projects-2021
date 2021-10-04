@@ -12,39 +12,58 @@
   body{
 background-color: #a7ddc8;
 }
+    .col{
+
+margin:1% auto;
+}
+
+.btn{
+  margin:1% 2%;
+}
 </style>
-<body>
-    <nav class="navbar navbar-light bg-light">
+   < body>
+  <nav class="navbar navbar-light bg-light">
         <div class="container-fluid">
           <a class="navbar-brand" href="#">
             <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAY1BMVEX///8AAACxsbG4uLjT09N1dXWoqKimpqa9vb2srKyhoaGLi4uEhITQ0NDZ2dlnZ2eYmJjCwsLKysri4uKTk5OBgYF7e3tmZmbv7+/29vabm5uJiYlvb29fX185OTlNTU1CQkKm6iXEAAADFklEQVR4nO3c61YiQQyF0eoBUVHxfnfU93/KmSx01CZIm05VpXq+/VuLHE6WLUKbEgAAAAAAAAAAAAAAAAAAAAAAAAAAAP43d/NV7RG+tZrfjfr+2XP31+ml0zjeLk9lvOeZ/YSX7s2h31SOFu/jvVhP+Bew6xaekzlZfIxnjHjQfbLvO52D/c/jHZiOeP18RLhFPfwy3avliPvuq1iLuuhNd28447J3RqgWD/vDWX7c3/UPCRRxI2BnuipunBIm4mbAznTOXtSISsA900GbaxojohLQtqS9C+KbX77TGvxSprJdDpP+bNVu0Xmm/lWnfotag6Ou1NozVjOiFnDkVsVq0b1BESliloC93+GrRswUME5ELaDTi7oYEbM1KJbK4SP+OGIyU2ZY+h1fv0UtoOvfHWq3mLlBUTdi9gZFzYgFGhT1IhYKWC9isYApPVSJqL1KzRSwTosFGxRai+bX14NoDT7kfMDSi1q4QXFWtMXiDYqSLVYJWLLFSgHLRawWsFRELeCZ+6NscaU8+LnzY5zXDFiixaoNitwtag1eOZ4/gBbRr8XKK7qWs8UADYp8EUM0KHJFDNKgyBMxUMA8EUMFTOnIPeJFrID+LQZrUGgtXphP0xo8cpzWxHNRw63o2qNbiyEbFF4tBm1Q+LQYtkHhEfEkckCPiKEbFMcjI2oNPmab1mRci8FXdO1aGfJk4PdqAY+zTmtiX9QGVnTN2mIjDQqtxd0Rm2lQWFpsqEHx84jztgL+PGJzAVO6UUaeb/1qLeB1wWlNftJigw0K5TaNLS2ulK+8KTytydBFbXJF14a12GyDYkiLWsBGGhS7W2y6QbErYvMBd0WcQEA94vs/L5hEwO9anEjAlJ62tKgFtN0hWZ2+qJNpUGgtap82bLRBoUWcVMCUTqcecEjExgPujvhUe8Dxbqce8PsWJxEwpd9TD7h9UScTcFuLt7XH8qS1OKEGxWaLk2pQ9N+2CfcG6Hhf78UufaN0EfcfH7yp8nnYIlaz5dXyIOo/KQQAAAAAAAAAAAAAAAAAAAAAAAAAAEAr/gCapR6wNevKvwAAAABJRU5ErkJggg==" alt="" width="30" height="24" class="d-inline-block align-text-top">
-            word count
+            Word Counter
           </a>
         </div>
       </nav>
-  <div class="form-floating">
-    <textarea class="form-control" placeholder="Leave a comment here" id="Textarea" style="height: 100px; width: 550px; "></textarea>
-    <label for="Textarea">type your word here</label>
-    <button type="button" onclick="functioncount()">count</button>
+      <br><br>
+  <div class="row">
+    <div class="col">
+<center>
 
-    <p id="demo"></p>
+    <textarea class="form-control" placeholder="Type your word here" id="Textarea" style="height: 100px; width: 550px; max-width: 95%"></textarea>
+    <!-- <label class="label" for="Textarea">Type your word here</label> -->
+<br>
+    <b><p id="value2">No. of Words: 0</p></b>
+ <button class="btn btn-md btn-danger" type="reset" id="btn1" onclick="reset()">Reset</button>
+    <button class="btn btn-md btn-dark"type="button" onclick="functioncount()">count</button>
 
+    <p id="demo"></p></center>
+</div>
   </div>
+
   <script>
       function functioncount() {
        var x = document.getElementById("Textarea").value;
        var xCount = x.split(" "
        ).length;
-       alert("you have written " +xCount+" words");
+       document.getElementById("value2").innerHTML = "No. of Words:" + " " + xCount;
       }
-     
 
+      function reset() {
+                 document.getElementById("Textarea").value = "";
+                 document.getElementById("value2").innerHTML = "No. of Words: 0";
+
+             }
 
   </script>
-    
+
 </body>
 </html>
-
 
 
 
