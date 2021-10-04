@@ -1,5 +1,3 @@
-## This will count all the words you will write in the textarea.
-
 # Ẃord Counter Application  ♨
 ## This will count all the words you will write in the textarea.
 User can paste or type the sentences and then click on count button to count the number of words.
