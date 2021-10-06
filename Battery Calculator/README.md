@@ -1,5 +1,5 @@
 # Battery % Calculator
-This is a browser-based dino game, much similar to Chrome's in-built T-Rex game.
+
 
 
 
