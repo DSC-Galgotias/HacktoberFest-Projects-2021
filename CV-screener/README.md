@@ -1,9 +1,9 @@
-# Music PLayist Webapp
+# CV SCANNER
 
-### Hey everyone 👋 Glad to see you here! 😄
+### Hey buddy 👋 Glad to see you here! 😄
 
 ## Description
-It is a web app which keeps all your favourite music tracks in the form of playlists. 🎶
+It is a web app which gives the details about the candidates applied for a particular job. 
 
 
 ## Technologies
@@ -17,4 +17,4 @@ It is a web app which keeps all your favourite music tracks in the form of playl
 - Navigate to the path where you downloaded the repo
 - Open index.html with the browser
 
-### Thank you for visiting this project, hope you liked it. 😉✌🎼
+### Thank you for visiting this project, hope you liked it. 😉✌
