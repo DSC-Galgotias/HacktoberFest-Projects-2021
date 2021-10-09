@@ -1,14 +1,14 @@
 <a><img src="HACKTOBER.png" width="1000px"></a>
 
 
-This project aims to simplify and guide the way beginners make their first contribution to open source . 
+This project aims to simplify and guide the way for beginners to make their first contribution to open source . 
 If you are looking to make your first contribution. This repository is the right place to start.
 
 ## Prerequisites:
 * Install git in your machine.
-* Have basic command line experiance.
+* Have basic command line experience.
 
-## Follow the given steps
+## Follow the given steps:
 
 1. Fork this repository 
    Click the button on top right corner labelled fork.
@@ -28,7 +28,7 @@ If you are looking to make your first contribution. This repository is the right
 
 4. Create a branch
    The best practise is to create another branch work on it and finally merge it .
-   So after changing to project directory ,to creata new branch type in the foll code.
+   So after changing to project directory ,to create a new branch type in the following code.
    ```
     git checkout -b your_new_branch_name
     ```
@@ -38,24 +38,24 @@ If you are looking to make your first contribution. This repository is the right
     ``` 
 
 5. Add the necessary contribution and commit those contributions.
-    After making the changes type in the below command this command will let you know which files have been modified.
+    After making the changes type in the below command. This command will let you know which files have been modified.
    ```
-    git clone 
+    git status 
     ```
-    Add those changes to the branch you just created using the below command.
+    Add the changes to the branch you just created using the below command.
      ```
     git add .
     ``` 
     Now commit those changes using the below command:
     
      ```
-    git commiit -m "The changes that you done must be mentioned here"
+    git commmit -m "The changes that you done must be mentioned here"
     ```
 <!--  
 6. Merge the branch into the main branch -->
 
 6. Push changes to github
-    Push your changes using the below command:
+   Push your changes using the below command:
 
     ```
     git push origin branch_name
@@ -69,7 +69,7 @@ If you are looking to make your first contribution. This repository is the right
     ```
 7. Submit your changes for review
     If you go to your repository on GitHub, you'll see a Compare & pull request button. Click on that button.
-    Then if you want to mention anything about the changes type it in and finally  submit the pull request.
+    Then if you want to mention anything about the changes you made type it in and finally submit the pull request.
 
 ## Rules and Regulations
 
