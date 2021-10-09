@@ -1,0 +1,2 @@
+# A very basic implementation of JavaScript by manipulating the DOM.
+Enter the hex code of any colour or the name of any colour in the input field and press the search button and the background would change into that colour
