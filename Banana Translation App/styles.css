@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Langar&display=swap');
+
+:root {
+    --primary-color: #f2c94c;
+    --black: #333333;
+}
+
+body {
+    font-family: 'Langar', cursive;
+    margin: 0px;
+    color: #333333;
+}
+
+.container {
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.container-center {
+    max-width: 600px;
+    margin: auto;
+}
+
+div {
+    display: block;
+}
+
+#header-div {
+    background-color: var(--primary-color);
+    font-size: 2rem;
+    padding: 1rem;
+    text-align: center;
+}
+
+#txt-input {
+    box-sizing: border-box;
+    display: block;
+    width: 100%;
+    min-height: 20vh;
+    margin-top: 2rem;
+    font-size: large;
+    padding: 1rem;
+}
+
+#btn-translate {
+    background-color: var(--primary-color);
+    border: none;
+    font-family: 'Kalam', cursive;
+    font-size: large;
+    margin: 1rem 0rem;
+    padding: 1rem 2rem;
+}
+
+#txt-output {
+    padding: 1rem;
+    font-size: large;
+    box-sizing: border-box;
+    width: 100%;
+    min-height: 10vh;
+    max-height: 20vh;
+    overflow: scroll;
+    border: 1px solid var(--black);
+}
+
+footer {
+    background-color: var(--primary-color);
+    margin: auto;
+    max-width: 100%;
+    text-align: center;
+    margin-top: 7rem;
+    padding: 1rem;
+}

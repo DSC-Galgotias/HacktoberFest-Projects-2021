@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Unit Converter</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ"
+        crossorigin="anonymous">
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            background: #333;
+        }
+
+        table {
+            margin-left: 10px;
+        }
+
+        .column {
+            float: left;
+            width: 50%;
+            padding: 10px;
+            color: #fff
+        }
+
+        .row:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        h1,
+        h4,
+        th,
+        td {
+            color: #fff
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 offset-md-3">
+                <h1 class="display-4 text-center mb-3">Unit Converter</h1>
+            </div>
+            <form id="myForm">
+                <div class="card bg-light mb-2" style="max-width: 100%;">
+                    <div class="card-block">
+                        <h3>Type a value in any of the fields to convert between length measurements:</h3>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="column">
+                        <div class="rounded card-primary mb-2 text-white" style="max-width: 50rem;">
+                            <div class="card-block ">
+                                <input id="inputFeet " type="number " placeholder="Feet " oninput="lengthConverter(this.id,this.value)
+                        " onchange="lengthConverter(this.id,this.value) ">
+                                <label>Feet</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column ">
+                        <div class="rounded card-success mb-2 text-white" style="max-width: 50rem;">
+                            <div class="card-block">
+                                <input id="inputMeters " type="number " placeholder="Meters" oninput="lengthConverter(this.id,this.value)
+                        " onchange="lengthConverter(this.id,this.value) ">
+                                <label>Meters</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column ">
+                        <div class="rounded card-danger mb-2 text-white" style="max-width: 50rem; ">
+                            <div class="card-block ">
+                                <input id="inputInches " type="number " placeholder="Inches " oninput="lengthConverter(this.id,this.value)
+                        " onchange="lengthConverter(this.id,this.value) ">
+                                <label>Inches</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column ">
+                        <div class="rounded card-warning mb-2 text-white" style="max-width: 50rem; ">
+                            <div class="card-block ">
+                                <input id="inputCentimeters " type="number " placeholder="Centimeters " oninput="lengthConverter(this.id,this.value)
+                        " onchange="lengthConverter(this.id,this.value) ">
+                                <label>Centimeters</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column ">
+                        <div class="rounded card-info mb-2 text-white" style="max-width: 50rem; ">
+                            <div class="card-block ">
+                                <input id="inputYards " type="number " placeholder="Yards " oninput="lengthConverter(this.id,this.value)
+                        " onchange="lengthConverter(this.id,this.value) ">
+                                <label>Yards</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column ">
+                        <div class="rounded card-primary mb-2 text-white " style="max-width: 50rem; ">
+                            <div class="card-block ">
+                                <input id="inputKilometers " type="number " placeholder="Kilometers " oninput="lengthConverter(this.id,this.value)
+                        " onchange="lengthConverter(this.id,this.value) ">
+                                <label>Kilometers</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column ">
+                        <div class="rounded card-warning mb-2 text-white " style="max-width: 50rem; ">
+                            <div class="card-block ">
+                                <input id="inputMiles " type="number " placeholder="Miles " oninput="lengthConverter(this.id,this.value)
+                        " onchange="lengthConverter(this.id,this.value) ">
+                                <label>Miles</label>
+                            </div>
+                        </div>
+                    </div>
+                    <input class="rounded-circle btn btn-outline-secondary" type="reset" style="margin-top: 25px;
+                            height: 100%; 
+                            padding: 10px; 
+                            width: 50%; 
+                            border-radius: 12px;" onclick="myFunction()" value="Reset">
+
+                </div>
+            </form>
+        </div>
+    </div>
+    <script>
+        function lengthConverter(source, valNum) {
+            valNum = parseFloat(valNum);
+            var inputFeet = document.getElementById("inputFeet ");
+            var inputMeters = document.getElementById("inputMeters ");
+            var inputInches = document.getElementById("inputInches ");
+            var inputCentimeters = document.getElementById("inputCentimeters ");
+            var inputYards = document.getElementById("inputYards ");
+            var inputKilometers = document.getElementById("inputKilometers ");
+            var inputMiles = document.getElementById("inputMiles ");
+            if (source == "inputFeet ") {
+                inputMeters.value = (valNum / 3.2808).toFixed(5);
+                inputInches.value = (valNum * 12).toFixed(5);
+                inputCentimeters.value = (valNum / 0.032808).toFixed(5);
+                inputYards.value = (valNum * 0.33333).toFixed(5);
+                inputKilometers.value = (valNum / 3280.8).toFixed(5);
+                inputMiles.value = (valNum * 0.00018939).toFixed(5);
+            }
+            if (source == "inputMeters ") {
+                inputFeet.value = (valNum * 3.2808).toFixed(5);
+                inputInches.value = (valNum * 39.370).toFixed(5);
+                inputCentimeters.value = (valNum / 0.01).toFixed(5);
+                inputYards.value = (valNum * 1.0936).toFixed(5);
+                inputKilometers.value = (valNum / 1000).toFixed(5);
+                inputMiles.value = (valNum * 0.00062137).toFixed(5);
+            }
+            if (source == "inputInches ") {
+                inputFeet.value = (valNum * 0.083333).toFixed(5);
+                inputMeters.value = (valNum / 39.370).toFixed(5);
+                inputCentimeters.value = (valNum / 0.39370).toFixed(5);
+                inputYards.value = (valNum * 0.027778).toFixed(5);
+                inputKilometers.value = (valNum / 39370).toFixed(6);
+                inputMiles.value = (valNum * 0.000015783).toFixed(6);
+            }
+            if (source == "inputCentimeters ") {
+                inputFeet.value = (valNum * 0.032808).toFixed(5);
+                inputMeters.value = (valNum / 100).toFixed(5);
+                inputInches.value = (valNum * 0.39370).toFixed(5);
+                inputYards.value = (valNum * 0.010936).toFixed(5);
+                inputKilometers.value = (valNum / 100000).toFixed(6);
+                inputMiles.value = (valNum * 0.0000062137).toFixed(6);
+            }
+            if (source == "inputYards ") {
+                inputFeet.value = (valNum * 3).toFixed(5);
+                inputMeters.value = (valNum / 1.0936).toFixed(5);
+                inputInches.value = (valNum * 36).toFixed(5);
+                inputCentimeters.value = (valNum / 0.010936).toFixed(5);
+                inputKilometers.value = (valNum / 1093.6).toFixed(5);
+                inputMiles.value = (valNum * 0.00056818).toFixed(5);
+            }
+            if (source == "inputKilometers ") {
+                inputFeet.value = (valNum * 3280.8).toFixed(5);
+                inputMeters.value = (valNum * 1000).toFixed(5);
+                inputInches.value = (valNum * 39370).toFixed(5);
+                inputCentimeters.value = (valNum * 100000).toFixed(5);
+                inputYards.value = (valNum * 1093.6).toFixed(5);
+                inputMiles.value = (valNum * 0.62137).toFixed(5);
+            }
+            if (source == "inputMiles ") {
+                inputFeet.value = (valNum * 5280).toFixed(5);
+                inputMeters.value = (valNum / 0.00062137).toFixed(5);
+                inputInches.value = (valNum * 63360).toFixed(5);
+                inputCentimeters.value = (valNum / 0.0000062137).toFixed(5);
+                inputYards.value = (valNum * 1760).toFixed(5);
+                inputKilometers.value = (valNum / 0.62137).toFixed(5);
+            }
+        }
+        function myFunction() {
+            document.getElementById("myForm").reset();
+        }
+    </script>
+</body>
+
+</html>
