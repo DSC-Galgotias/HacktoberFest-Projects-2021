@@ -1,0 +1,1 @@
+This Repository contains the code for the "To-do List" made using ReactJS and storing data using Local Storage.
