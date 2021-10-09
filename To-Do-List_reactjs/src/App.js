@@ -3,7 +3,7 @@ import React from "react";
 // import UseState from "./react_component/hooks/useState";
 // import UseEffect from "./react_component/hooks/useEffect";
 // import UseReducer from "./react_component/hooks/useReducer";
-// import Todo from "./react_component/to_do-react/todo";
+import Todo from "./react_component/to_do-react/todo";
 
 // Using const
 const App = () => {
@@ -11,7 +11,7 @@ const App = () => {
 	// New
 	return (
 		<>
-			<h3>Hello</h3>
+			<Todo />
 		</>
 	);
 };
