@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FeedbackForm</title>
+    <link href="https://fonts.googleapis.com/css2?family=Train+One&display=swap" rel="stylesheet">
+    <style>
+    div {
+      font-family: 'Train One', cursive;
+    }
+    </style> 
+</head>
+<body>
+    <h2><u>Feedback Form</u>:)</h2>
+    <form action="backend.php">
+        <div>
+        <label for="name">Name:</label> 
+    
+   <input type="text" name="myName" id="name">
+    </div><br>
+    <div>
+    Email:   <input type="email" name="myEmail">
+    </div><br>
+    <div>
+    Phone No.:<input type="number" name="myPhoneNo.">
+    </div><br>
+    <div>
+    DOB:    <input type="date" name="myDOB">
+    </div><br>
+    <div>
+    Gender: Male<input type="radio" name="myGender" >Female<input type="radio" name="myGender" >Other<input type="radio" name="myGender" >
+    </div><br>
+    <div>
+    <label for="rate">Rate</label>
+    <select name="rate" id="rate">
+        <option value="p">Very Poor</option>
+        <option value="m">Medium</option>
+        <option value="g">Good</option>
+        <option value="vg">Very Good</option>
+        <option value="e" selected>Excellent</option>
+    </select>
+    </div><br>
+    <div>
+    Any comments/compliments:<br>
+        <textarea name="myText" cols="30" rows= "10"></textarea>
+        </div>
+    <div>
+    Would try it again: <input type="checkbox" name="myChoie" checked>
+    </div><br>
+    <div>
+     <input type="submit" value="Submit Now">
+    <input type="reset" value="Reset Now">
+    </div>
+</form>
+
+</body>
+</html>
