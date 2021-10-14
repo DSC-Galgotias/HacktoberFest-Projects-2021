@@ -24,12 +24,19 @@ function changeimage() {
   imgs.style.transform = `translateX(${-index * 500}px)`;
 }
 
+function resetint() {
+  clearInterval(interval);
+  interval = setInterval(run, 4000);
+}
+
 leftbtn.addEventListener("click", () => {
   index--;
   changeimage();
+  resizeint();
 });
 
 rightbtn.addEventListener("click", () => {
   index++;
   changeimage();
+  resizeint();
 });
