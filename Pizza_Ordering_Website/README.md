@@ -2,6 +2,8 @@
 
 Web Programming with Python and JavaScript
 
+Added add a pizza ordering app. It has an admin page which tells you who ordered what. 
+
 
 Templates
 ---------
