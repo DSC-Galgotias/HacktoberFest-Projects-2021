@@ -1,0 +1,22 @@
+body {
+  background-color: lightblue;
+  height: 100vh;
+}
+
+h1,
+h3 {
+  font-family: "Bebas Neue", cursive;
+}
+
+#results {
+  display: none;
+}
+
+.bodyBackground {
+  background: rgb(31, 156, 255);
+  background: linear-gradient(
+    15deg,
+    rgba(31, 156, 255, 1) 0%,
+    rgba(1, 30, 101, 1) 100%
+  );
+}
