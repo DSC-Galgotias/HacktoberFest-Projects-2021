@@ -1,0 +1,21 @@
+{% extends "orders/base.html" %}
+
+{% block title %}
+    Toppings
+{% endblock %}
+
+{% block main %}
+<h1> Topping </h1>
+<h3> Please Select {{ number }} topping(s)</h3>
+<form action="{% url 'topping' %}" method="post">
+	{% csrf_token %}
+	<table class="table">
+		{% for item in toppings %}
+			<tr>
+				<td><input type="checkbox" name="topping" value="{{ item }}">{{ item }}</td>
+			</tr>
+		{% endfor %}
+	</table>
+	<input type="submit" value="Submit"/>
+</form>	
+{% endblock %}
