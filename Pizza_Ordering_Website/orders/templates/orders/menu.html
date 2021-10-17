@@ -1,0 +1,157 @@
+{% extends "orders/base.html" %}
+
+{% block title %}
+    Menu
+{% endblock %}
+
+{% block main %}
+
+<h1>Menu</h1>
+<h3>Regular</h3>
+<form action="{% url 'index' %}" method="post">
+  {% csrf_token %}
+<table class="table">
+  <thead>
+    <tr>
+      <th scope="col">Name</th>
+      <th scope="col">Small</th>
+      <th scope="col">Large</th>
+    </tr>
+  </thead>
+  <tbody>
+{% for item in regular %}
+	<tr>
+		<td>{{ item.name }}</td>
+		<td><input type="checkbox" name="items[]"id="{{ item.id }}" value="{{ item.id }}, {{ item.small }}, {{ item.name }}">{{ item.small }}</td>
+		<td><input type="checkbox" name="items[]"id="{{ item.id }}" value="{{ item.id }}, {{ item.large }}, {{ item.name }}">{{ item.large }}</td>
+	</tr>
+{% endfor %}
+</tbody>
+</table>
+
+
+<h3>Sicilian</h3>
+<table class="table">
+  <thead>
+    <tr>
+      <th scope="col">Name</th>
+      <th scope="col">Small</th>
+      <th scope="col">Large</th>
+    </tr>
+  </thead>
+  <tbody>
+{% for item in sicilian %}
+	<tr>
+		<td>{{ item.name }}</td>
+		<td><input type="checkbox" name="items[]"id="{{ item.id }}" value="{{ item.id }}, {{ item.small }}, {{ item.name }}">{{ item.small }}</td>
+		<td><input type="checkbox" name="items[]"id="{{ item.id }}" value="{{ item.id }}, {{ item.large }}, {{ item.name }}">{{ item.large }}</td>
+	</tr>
+{% endfor %}
+</tbody>
+</table>
+
+
+
+<h3>Toppings</h3>
+<ul>
+	{% for item in toppings %}
+	<li>{{ item }}</li>
+	{% endfor %}
+</ul>
+
+
+
+<h3>Subs</h3>
+<table class="table">
+  <thead>
+    <tr>
+      <th scope="col">Name</th>
+      <th scope="col">Small</th>
+      <th scope="col">Large</th>
+    </tr>
+  </thead>
+  <tbody>
+{% for item in subs %}
+	<tr>
+		<td>{{ item.name }}</td>
+		<td><input type="checkbox" name="items[]"id="{{ item.id }}" value="{{ item.id }}, {{ item.small }}, {{ item.name }}">{{ item.small }}</td>
+		<td><input type="checkbox" name="items[]"id="{{ item.id }}" value="{{ item.id }}, {{ item.large }}, {{ item.name }}">{{ item.large }}</td>
+	</tr>
+{% endfor %}
+</tbody>
+</table>
+
+
+
+<h3>Pasta</h3>
+<table class="table">
+  <thead>
+    <tr>
+      <th scope="col">Name</th>
+      <th scope="col">Price</th>
+    </tr>
+  </thead>
+  <tbody>
+{% for item in pasta %}
+	<tr>
+		<td>{{ item.name }}</td>
+		<td><input type="checkbox" name="items[]"id="{{ item.id }}" value="{{ item.id }}, {{ item.price }}, {{ item.name }}">{{ item.price }}</td>
+	</tr>
+{% endfor %}
+</tbody>
+</table>
+
+
+<h3>Salad</h3>
+<table class="table">
+  <thead>
+    <tr>
+      <th scope="col">Name</th>
+      <th scope="col">Price</th>
+    </tr>
+  </thead>
+  <tbody>
+{% for item in salad %}
+	<tr>
+		<td>{{ item.name }}</td>
+		<td><input type="checkbox" name="items[]"id="{{ item.id }}" value="{{ item.id }}, {{ item.price }}, {{ item.name }}">{{ item.price }}</td>
+	</tr>
+{% endfor %}
+</tbody>
+</table>
+
+<h3>Dinner Platters</h3>
+<table class="table">
+  <thead>
+    <tr>
+      <th scope="col">Name</th>
+      <th scope="col">Small</th>
+      <th scope="col">Large</th>
+    </tr>
+  </thead>
+  <tbody>
+{% for item in dinner %}
+	<tr>
+		<td>{{ item.name }}</td>
+		<td><input type="checkbox" name="items[]"id="{{ item.id }}" value="{{ item.id }}, {{ item.small }}, {{ item.name }}">{{ item.small }}</td>
+		<td><input type="checkbox" name="items[]"id="{{ item.id }}" value="{{ item.id }}, {{ item.large }}, {{ item.name }}">{{ item.large }}</td>
+	</tr>
+{% endfor %}
+</tbody>
+</table>
+<input type="submit" value="Submit"/>
+</form>
+{% endblock %}
+
+
+
+
+
+
+
+
+
+
+
+
+

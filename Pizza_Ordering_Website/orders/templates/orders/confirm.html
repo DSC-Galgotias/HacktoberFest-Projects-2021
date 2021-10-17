@@ -1,0 +1,40 @@
+{% extends "orders/base.html" %}	
+
+{% block title %}
+    Confirm
+{% endblock %}
+
+{% block main %}
+<h1>Non-Topping Food</h1>
+<table class="table">
+	<tbody>
+	{% for item in normal %}
+	<tr>
+		<td>{{ item }}</td>
+	</tr>
+	{% endfor %}
+	</tbody>
+</table>
+
+<h1>Topping Pizzas</h1>
+<table class="table"></table>
+	<tbody>
+	{% for item in toppings %}
+	<tr>
+		<p> 
+			{% for itemr in item %}
+				<td>{{ itemr }}</td>
+			{% endfor %}
+		<p>
+	</tr>
+	{% endfor %}
+	</tbody>
+</table>
+<h2> Total </h2>
+<h3>{{ price }}</h3>
+
+<form action="{% url 'buy' %}" method="post">
+	  {% csrf_token %}
+	<input type="submit" value="Confirm"/>
+</form>
+{% endblock %}
