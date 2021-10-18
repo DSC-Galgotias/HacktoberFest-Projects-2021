@@ -1,20 +1,20 @@
 body{
     text-align: center;
-    background-color: #444941;
+    background-color: #fafafa;
     
 }
 
 .playerbox{
 
     display: inline-block;
-    padding:3rem;
+    padding:4rem;
 
 }
 
 .box{
     width:70%;
     display: inline-block;
-    padding: 0  rem 3rem 1rem 3rem;
+    padding: 0  rem 3.5rem 1rem 3.5rem;
 }
 
 .refresh-me{
@@ -35,6 +35,6 @@ body{
 }
 
 footer{
-    font-family: "Dancing Script";
+    font-family: "Montserrat";
     color: #fff;
 }
