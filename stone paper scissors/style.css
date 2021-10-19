@@ -1,0 +1,82 @@
+*{
+  margin: 0;
+  padding: 0;
+  max-width: 100%;
+  box-sizing: border-box;
+}
+h1,h2{
+  text-align: center;
+  color: #aaaaaa;
+}
+.choices{
+  text-align: center;
+  padding: 10px 0px;
+}
+.choices p{
+  font-family: 'Montserrat', sans-serif;
+}
+.choices img{
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  padding: 2px;
+}
+.choices button{
+  border-radius: 50%;
+  border: 2px solid #a4ebf3;
+  padding: 5px;
+  backdrop-filter: blur(2rem);
+}
+.choices button:hover{
+  opacity: 0.5;
+}
+.results{
+  text-align: center;
+}
+.results img{
+    border: 2px solid #aaaaaa;
+    width: 200px;
+    height: 200px
+}
+.results p{
+  font-family: 'Roboto', sans-serif;
+  padding: 5px;
+}
+.section{
+  width: 100%;
+  height: 100vh;
+  background-color: #ccf2f4;
+}
+
+.container h1{
+  padding: 50px 100px 50px 50px;
+  color: #aaaaaa;
+  text-align: left;
+}
+.container .btn{
+  margin: 10px 400px 0 50px;
+}
+.refresh{
+  text-align: center;
+}
+nav img{
+  padding: 0;
+}
+.mobile{
+  width: 300px;
+  height: auto;
+  margin: 10px 10px 0 0;
+  padding-top: 100px;
+  transform: rotate(15deg);
+}
+.logo{
+  position: absolute;
+  top:30px;
+  left:50px;
+}
+.p1,.comp{
+  padding: 5px;
+}
+.points h1{
+  font-size: 3rem;
+}
