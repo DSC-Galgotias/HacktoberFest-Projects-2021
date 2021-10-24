@@ -1,0 +1,145 @@
+*{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    box-sizing: border-box;
+    margin: 0px;
+}
+
+ul{
+    display: flex;
+}
+li{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    list-style: none;
+    padding: 10px 30px;
+}
+a{
+  text-decoration: none;  
+  font-size: 35px;
+
+}
+#header{
+    background-color: aqua;
+    position: fixed;
+    /* display: block; */
+    box-shadow: 5px 2px 15px 1px rgb(0, 211, 211);
+    z-index: 5;
+    width: 100%;
+    top: 0;
+}
+body{
+    width: 100%;
+    height: 100%;
+}
+img{
+    width: 100%;
+    height:auto;
+    position: fixed; 
+    top: 0; 
+    left: 0; 
+}
+#cupcake.active{
+    filter: blur(8px);
+}
+#contact{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin-top: 200px;
+}
+#contact:hover{
+    color: white;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    width: 750px;
+    margin: 15px auto;
+    padding: 15px;
+    background-color: transparent;
+    border: 2px solid transparent;
+    border-radius: 5px;
+    position: relative;
+}
+#main{
+    color: rgb(252, 77, 106);
+    font-size: 45px;
+    font-weight: 900;
+    word-spacing: 5px;
+    position: absolute;
+    top: 0;
+    left: 0px;
+    right: 0px;
+    /* width: 802px; */
+    text-align: center;
+    margin: 0px;
+    margin-top:100px;
+    font-family: 'Dancing Script', cursive;
+}
+#heading{
+    text-align: center;
+    font-size: 40px;
+    font-weight: 900;
+    font-family: 'Abril Fatface', cursive;
+    letter-spacing: 5px;
+    margin-bottom: 15px;
+}
+input,textarea,select, option{
+    width: 680px;
+    padding: 10px;
+    margin: 10px;
+    border: 0px;
+    border-bottom: 2px solid blue;
+    outline: none;
+    font: 105px;
+    /* cursor: pointer; */
+    /* font-family: 'Pattaya', sans-serif; */
+    letter-spacing: 2px;
+    background: none;
+    color: black;
+    font-size: 20px;
+    background-color: rgb(211, 255, 240);
+}
+/* input:focus{
+    background-color: blue;
+    border: 5px solid white;
+    color: white;
+} */
+select{
+    cursor: pointer;
+    color: #797979;
+    font-size: 20px;
+}
+input:hover, textarea:hover, select:hover{
+    border-bottom: 2px solid black;
+    outline: none;
+    background: none;
+}
+form:hover {
+    /* background-color: aqua; */
+    background:rgb(143, 255, 255) no-repeat center center;
+    background-size: cover;
+    border: 4px solid aqua;
+}
+.btn{
+    margin: 4px auto;
+    width: 100px;
+    border: 2px solid black;
+    padding: 8px 5px;
+    background-color: aqua;
+    border-radius: 5px;
+    font-size: large;
+    font-weight: 900;
+    cursor: pointer;
+}
+.btn:hover{
+    background-color: yellow;
+    color: black;
+}
+
+.same::-webkit-input-placeholder{
+    font-size: 20px;
+    color: rgb(0, 0, 0);
+    opacity: 0.5;
+    /* background: none; */
+}

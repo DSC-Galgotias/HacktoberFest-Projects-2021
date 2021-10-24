@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>#{title}</title>
+    style
+        include ../static/style.css
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Pattaya&display=swap" rel="stylesheet">
+</head>
+<body>
+    #{alert1}
+    <img src="/static/cupcakes.jpg" alt="" id="cupcake">
+    <div id="header">
+        <ul>
+            <a href="/"><li>Home</li></a>
+            <a href="/"><li>About</li></a>
+            <a href="/"><li>Contact</li></a>
+            <a href="/"><li>About Project</li></a>
+        </ul>
+    </div>
+    <p id="main">Contact Us for sweet and sugary cupcakes !</p>
+
+    <div id="contact">
+        <form action="/" method="POST" id="form" name="form">
+
+            <div id="heading">Contact Form</div>
+            <input type="text" name="name" id="name" class="same" placeholder="Enter your name"  autocomplete="off">
+            <input type="text" name="age" id="age" class="same" placeholder="Enter your age" autocomplete="off">
+            <select name="gender" id="gender">
+                <option value="Enter your gender" id="option1">Enter your gender</option>
+                <option value="Male">Male</option>
+                <option value="Female">Female</option>
+                <option value="Other">Other</option>
+            </select>
+            <!-- <input type="text" name="gender" id="gender" class="same" placeholder="Enter your gender"> -->
+            <textarea name="address" id="address" cols="30" class="same" rows="10" placeholder="Enter your address" autocomplete="off"></textarea>
+            <textarea name="more" id="more" cols="30" class="same" rows="10" placeholder="More about you" autocomplete="off"></textarea>
+            <button class="btn" onclick="return validation()" id="submit">Submit</button>
+        </form>
+    </div>
+    script(src='../static/style.js')
+</body>
+</html>

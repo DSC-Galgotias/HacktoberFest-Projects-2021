@@ -1,0 +1,4 @@
+Navigate to app.js file
+If nodemon is not installed, run npm i nodemon
+type nodemonin cmd
+Application will start up at port 80
