@@ -7,4 +7,4 @@
 * Created using Vanilla Javascript.
 
 # Snapshot
-![Preview]()
+![Preview](https://user-images.githubusercontent.com/77202746/139524501-14e0f371-2da7-426f-bdb5-8ae3815cca71.png)
